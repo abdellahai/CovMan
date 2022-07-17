@@ -1,5 +1,6 @@
 import { FaBars, FaTimes} from 'react-icons/fa';
 import { useRef } from 'react';
+import LogoWhite from '../imgs/LogoWhite.png';
 import  '../styles/nav.css'
 export default function NavBar() {
     const navRef = useRef()
@@ -9,10 +10,13 @@ export default function NavBar() {
     }
 return(
     <header>
-        <h3><a href="#">Logo</a></h3>
-        <nav ref={navRef}>
-        <a href="#">Contact Us</a>
-            <a href="#">Login</a>
+        <nav ref={navRef} className='nav'>
+            <a href='/' className='SiteTitle'> <img src = {LogoWhite} alt ='Logo' className='nav-logo'></img>CovMan</a>
+          
+                <a href="/">Contact Us</a>
+                
+                <a href="/">Login</a>
+        
             <button className = 'nav-btn nav-close-btn' onClick={showNavBar}>
                 <FaTimes/>
             </button>
