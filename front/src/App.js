@@ -1,28 +1,33 @@
-import "./App.css";
-import NavBar from "./components/NavBar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home } from "./components/Pages/Home";
-import { About } from "./components/Pages/About";
-import { Blog } from "./components/Pages/Blog";
-import { Contact } from "./components/Pages/Contact";
+import Layout from "./components/Layout";
+import { Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import PageOne from "./pages/contactus";
+import PageTwo from "./pages/about";
+import Login from "./pages/login";
+import PageCTA from "./pages/register";
 
 function App() {
-  return (
-    <>
-      <Router>
-        <NavBar />
-
-        <div className="pages">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/blog" component={Blog} />
-            <Route path="/contact" component={Contact} />
-          </Switch>
-        </div>
-      </Router>
-    </>
-  );
+    return (
+        <Layout>
+            <Switch>
+                <Route path="/" exact>
+                    <Home />
+                </Route>
+                <Route path="/contactus">
+                    <PageOne />
+                </Route>
+                <Route path="/about">
+                    <PageTwo />
+                </Route>
+                <Route path="/login">
+                    <Login />
+                </Route>
+                <Route path="/register">
+                    <PageCTA />
+                </Route>
+            </Switch>
+        </Layout>
+    );
 }
 
 export default App;
