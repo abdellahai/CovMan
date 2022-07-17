@@ -50,3 +50,10 @@
     border: none;
 
 }
+form div{
+    display: flex;
+}
+form div *{
+    
+    margin: 0 3%;
+}

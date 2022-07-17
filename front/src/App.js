@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import PageOne from "./pages/contactus";
 import PageTwo from "./pages/about";
 import Login from "./pages/login";
-import PageCTA from "./pages/register";
+import Register from "./pages/register";
 
 function App() {
     return (
@@ -23,7 +23,7 @@ function App() {
                     <Login />
                 </Route>
                 <Route path="/register">
-                    <PageCTA />
+                    <Register />
                 </Route>
             </Switch>
         </Layout>

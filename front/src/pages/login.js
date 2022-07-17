@@ -34,7 +34,7 @@ const Login = () => {
                 value={pwd}
                 required
                 />
-            <button>S'inscrire</button>
+            <button>Se connecter</button>
             </form>
         </section>
     );
