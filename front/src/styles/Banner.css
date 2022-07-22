@@ -2,7 +2,8 @@
     height: 100%;
     margin-top: 0;
     padding: 260px 0 100px 0;
-    background-image: url('../imgs/banner_bg.jpg');
+    background-color: aliceblue;
+    /* background-image: url('../imgs/banner_bg.jpg'); */
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;

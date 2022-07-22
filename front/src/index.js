@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import NavBar from './components/NavBar';
 import HomeView from './views/Home';
+import './styles/index.css'
 import { BrowserRouter , Routes, Route } from "react-router-dom";
 
 ReactDOM.render(
