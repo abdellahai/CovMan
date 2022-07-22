@@ -3,8 +3,8 @@ import Banner from '../components/Banner';
 import {} from 'react-bootstrap';
 
 const HomeView =()=>{
-    <div>
+    return(<div>
         <Banner/>
-    </div>
+    </div>)
 }
 export default HomeView;
