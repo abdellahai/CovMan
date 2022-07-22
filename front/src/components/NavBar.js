@@ -1,5 +1,6 @@
 import React from "react";
-import {Navbar, Nav, Container, Button} from 'react-bootstrap'
+import {Navbar, Nav, Container, Button} from 'react-bootstrap';
+import '../styles/NavBar.css'
 const NavBar = ()=>{
     return (
         <Navbar expand='lg'>
