@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
 import NavBar from './components/NavBar';
-import { BrowserRouter as Router } from "react-router-dom";
+import HomeView from './views/Home';
+import { BrowserRouter , Routes, Route } from "react-router-dom";
 
 ReactDOM.render(
-    <Router>
+    <BrowserRouter>
         <NavBar/>
-    </Router>,
+        <Routes>
+            <Route  path='/' element={<HomeView/>}/>
+        </Routes>
+    </BrowserRouter>,
     document.getElementById("root")
 );
