@@ -12,8 +12,11 @@ function LoginForm() {
       <Form.Group className="mb-5" controlId="formBasicEmail">
         {/* <Form.Label className="Login">Email address</Form.Label> */}
         <Form.Control type="email" placeholder="Email" />
+     
       </Form.Group>
+
       <Form.Group className="mb-3" controlId="formBasicPassword">
+        {/* <Form.Label>Password</Form.Label> */}
         <Form.Control type="password" placeholder="Mot de passe" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
@@ -23,8 +26,7 @@ function LoginForm() {
         Se connecter
       </Button>
     </Form>
-    <span><p><a href = '/reset_pass' className="interact">Mot de pass oubliee ?</a></p></span>
-    <span><p><a href = '/register' className="interact">Vous n'avez pas de compte</a></p></span>
+    <span><p className="interact">Vous avez deja compte</p></span>
     </Col>
     </Row>
     </Container>

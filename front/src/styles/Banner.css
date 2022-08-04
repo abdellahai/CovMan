@@ -1,12 +1,11 @@
 .banner {
     height: 100%;
-    margin-top: 0;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
     padding: 260px 0 100px 0;
     background-color: aliceblue;
-    /* background-image: url('../imgs/banner_bg.jpg'); */
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    justify-content:center;
   }
   .banner .tagline {
     font-weight: 700;
@@ -41,18 +40,6 @@
     letter-spacing: 0.8px;
     display: flex;
     align-items: center;
-  }
-  .banner button svg {
-    font-size: 25px;
-    margin-left: 10px;
-    transition: 0.3s ease-in-out;
-    line-height: 1;
-  }
-  .banner button:hover svg {
-    margin-left: 25px;
-  }
-  .banner img {
-    animation: updown 3s linear infinite;
   }
   @keyframes updown {
       0% {
